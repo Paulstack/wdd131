@@ -1,0 +1,90 @@
+/* Body layout using CSS Grid */
+body {
+    display: grid; /* Defines a grid layout for the page */
+    height: 100vh; /* Sets the height of the viewport to 100% */
+    grid-template: auto 1fr auto / 300px 1fr auto; /* Defines rows and columns:
+                                                     - Rows: auto (header), 1fr (main), auto (footer)
+                                                     - Columns: 300px (left sidebar), 1fr (main content), auto (right sidebar) */
+}
+
+/* Header styling */
+header {
+    background: lightpink; /* Sets a light pink background color */
+    padding: 2rem; /* Adds padding inside the header */
+    grid-column: 1 / 4; /* Makes the header span across all three columns */
+    margin: 0; /* Removes any default margin */
+}
+
+/* Left sidebar styling */
+.left {
+    background: lightblue; /* Sets a light blue background color */
+    grid-column: 1 / 2; /* Places the left sidebar in the first column */
+}
+
+/* Main content styling */
+main {
+    background: coral; /* Sets a coral background color */
+    grid-column: 2 / 3; /* Places the main content in the second column */
+}
+
+/* Right sidebar styling */
+.right-sidebar {
+    background: lightgreen; /* Sets a light green background color */
+    grid-column: 3 / 4; /* Places the right sidebar in the third column */
+}
+
+/* Footer styling */
+footer {
+    background: lightyellow; /* Sets a light yellow background color */
+    padding: 2rem; /* Adds padding inside the footer */
+    grid-column: 1 / 4; /* Makes the footer span across all three columns */
+}
+
+/* Shared styling for both sidebars */
+.left-sidebar,
+.right-sidebar {
+    padding: 2rem; /* Adds padding inside the sidebars */
+}
+
+/* Navigation bar styling */
+.nav {
+    padding: 1rem 0; /* Adds vertical padding to the navigation bar */
+    width: 100%; /* Ensures the navigation bar spans the full width of the viewport */
+    margin: 0; /* Removes any default margin */
+    position: relative; /* Ensures the nav stays in its position */
+    top: 0; /* Aligns the nav directly below the header */
+}
+
+/* Navigation list styling */
+.nav ul {
+    list-style: none; /* Removes default bullet points from the list */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Uses flexbox to arrange list items horizontally */
+    justify-content: space-between; /* Distributes items evenly across the full width */
+    align-items: center; /* Vertically aligns the items in the center */
+}
+
+/* Navigation list item styling */
+.nav li {
+    flex: 1; /* Makes each list item take up equal space */
+    text-align: center; /* Centers the text inside each list item */
+}
+
+/* Navigation link styling */
+.nav a {
+    text-decoration: none; /* Removes the underline from links */
+    color: white; /* Sets the text color to white */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1rem; /* Sets the font size */
+    padding: 0.5rem 1rem; /* Adds padding around the links */
+    display: block; /* Makes the link fill the entire list item */
+    transition: background-color 0.3s ease; /* Adds a smooth transition effect for hover */
+}
+
+/* Hover effect for navigation links */
+.nav a:hover {
+    background-color: gray; /* Changes the background color to gray on hover */
+    border-radius: 5px; /* Adds rounded corners to the link on hover */
+}
+
