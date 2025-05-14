@@ -1,0 +1,16 @@
+/* Hide the menu button for larger screens */
+#menu {
+  display: none;
+}
+
+/* Navigation styling for larger screens */
+.navigation {
+  display: flex !important; /* Ensure the navigation is displayed */
+  flex-direction: row; /* Arrange navigation items in a row */
+  justify-content: space-around; /* Space items evenly across the navigation bar */
+}
+
+/* Responsive gallery layout */
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjust columns based on available space */
+}

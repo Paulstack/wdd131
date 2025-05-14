@@ -1,0 +1,70 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  display: block;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+}
+
+.navigation a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: #555;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Styling the gallery */
+.gallery {
+  display: grid; /* Use grid layout for the gallery */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjust columns based on available space */
+  gap: 1rem; /* Add spacing between the grid items */
+  padding: 1rem; /* Add padding around the gallery */
+  justify-items: center; /* Center the content inside each grid item */
+}
+
+.gallery figure {
+  margin: 0; /* Remove default margin from figure */
+  text-align: center; /* Center-align the text inside the figure */
+}
+
+.gallery img {
+  width: 200px; /* Set a fixed width for all images */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image fills the container while maintaining proportions */
+  border-radius: 8px; /* Optional: Add rounded corners to images */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better aesthetics */
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
