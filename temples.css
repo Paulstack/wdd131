@@ -68,3 +68,26 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+/* Responsive navigation for larger screens */
+@media (min-width: 768px) {
+  .navigation {
+    display: flex !important; /* Show navigation horizontally */
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #menu {
+    display: none; /* Hide the menu button on large screens */
+  }
+}
+
+/* Responsive gallery for larger screens */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr); /* Show 4 columns on larger screens */
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
