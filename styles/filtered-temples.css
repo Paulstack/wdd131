@@ -1,0 +1,144 @@
+:root {
+  --primary: #008751;
+  --secondary: #fcd116;
+  --accent: #ef233c;
+  --bg: #f2f2f2;
+  --text: #222;
+  --card-bg: #fff;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  display: block;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+}
+
+.navigation a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: #555;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+/* Styling the gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.temple-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.temple-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.temple-card img {
+  width: 100%;
+  max-width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.temple-card h3 {
+  margin: 0.5rem 0 0.25rem 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.temple-card p {
+  margin: 0.25rem 0;
+  font-size: 1em;
+}
+
+footer {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.95em;
+  margin-top: auto;
+}
+
+/* Responsive navigation for larger screens */
+@media (min-width: 768px) {
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.25rem;
+  }
+  .gallery {
+    gap: 1rem;
+  }
+  .temple-card img {
+    height: 120px;
+  }
+}

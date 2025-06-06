@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product review form for Green Harvest Network.">
+    <meta name="keywords" content="product review, form, Green Harvest Network, agriculture, farming">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <!-- Product Name -->
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <!-- JS will insert product options here -->
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <label><input type="radio" name="rating" id="rate1" value="1" required> 1</label>
+        <label><input type="radio" name="rating" id="rate2" value="2"> 2</label>
+        <label><input type="radio" name="rating" id="rate3" value="3"> 3</label>
+        <label><input type="radio" name="rating" id="rate4" value="4"> 4</label>
+        <label><input type="radio" name="rating" id="rate5" value="5"> 5</label>
+      </fieldset>
+
+      <!-- Installation Date -->
+      <label for="installDate">Date of Installation:</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features (Check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Speed"> Speed</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Efficiency"> Efficiency</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Reliability"> Reliability</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="review">Written Review (optional):</label>
+      <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+      <!-- User Name -->
+      <label for="userName">Your Name (optional):</label>
+      <input type="text" id="userName" name="userName">
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Green Harvest Network | All rights reserved</p>
+    <p>Last lastModified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

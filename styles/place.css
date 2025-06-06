@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #008751;
+  --secondary-color: #fcd116;
+  --accent-color: #ef233c;
+  --text-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 900px;   /* Adjust this value as needed */
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 12px; /* Optional: rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+}
+
+.hero figcaption {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem; /* Added for spacing on mobile */
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem; /* Added for separation */
+}
+
+.icon::after {
+  content: "⛅";
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon-svg {
+  display: inline-block;
+}
+.icon-emoji {
+  display: none;
+}
+
+/* Show emoji and hide SVG on wider screens */
+@media (min-width: 600px) {
+  .icon-svg {
+    display: none;
+  }
+  .icon-emoji {
+    display: inline;
+  }
+}
+
+/* Responsive layout */
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .data { grid-column: 1; }
+  .weather { grid-column: 2; }
+}

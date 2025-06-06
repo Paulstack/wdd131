@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Nigeria's data, weather and beautiful sights.">
+    <meta name="keywords" content="Nigeria, travel, weather, tourism">
+  <title>Nigeria</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+
+  <main>
+    <figure class="hero">
+      <picture>
+        <source srcset="images/Abuja-aso-rock.webp" media="(min-width: 900px)">
+        <source srcset="images/Abuja-aso-rock.webp" media="(min-width: 600px)">
+        <img src="images/Abuja-aso-rock.webp" alt="Abuja Federal Capital, Aso Rock and urban road way.">
+      </picture>
+      <figcaption>Abuja Federal Capital, Aso Rock and urban road way.</figcaption>
+    </figure>
+
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 923,769 km²</li>
+        <li><strong>Population:</strong> 223 million (2023 est.)</li>
+        <li><strong>Capital:</strong> Abuja</li>
+        <li><strong>Currency:</strong> Naira (₦)</li>
+        <li><strong>Language:</strong> English</li>
+        <li><strong>Region:</strong> West Africa</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>
+        Weather 
+        <span class="icon-svg">
+          <img src="images/weather.svg" alt="Cloudy weather" aria-label="Cloudy weather" width="24" height="24">
+        </span>
+        <span class="icon-emoji" aria-hidden="true">⛅</span>
+      </h2>
+      <p><strong>Temperature:</strong> <span id="temp">86</span>°F</p>
+      <p><strong>Wind Speed:</strong> <span id="speed">10</span> mph</p>
+      <p><strong>Wind Chill:</strong> <span id="chill"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Paul Ali. Last updated: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A dynamic, filterable gallery of temples.">
+  <meta name="keywords" content="temples, gallery, filter, lazy loading">
+  <meta name="author" content="Paul Ali">
+  <title>Filtered Temples</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <script src="filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Filtered Temples Gallery</h1>
+    <nav>
+      <button data-filter="home">Home</button>
+      <button data-filter="old">Old</button>
+      <button data-filter="new">New</button>
+      <button data-filter="large">Large</button>
+      <button data-filter="small">Small</button>
+    </nav>
+    <!-- Added navigation links -->
+    <nav class="main-links">
+      <a href="index.html">Home Page</a>
+      <a href="place.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.churchofjesuschrist.org/temples" target="_blank" rel="noopener">Official Temples</a>
+      <a href="#gallery">Jump to Gallery</a>
+    </nav>
+  </header>
+  <main>
+    <div class="gallery" id="gallery"></div>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> Your Name | Last updated: <span id="lastModified"></span>
+    <!-- Example footer links -->
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </footer>
+</body>
+</html>
