@@ -1,0 +1,22 @@
+# Ignore OneDrive-related sync files
+*.tmp
+*.lnk
+*.DS_Store
+~$*
+Thumbs.db
+
+# Ignore system and IDE files
+.vscode/
+_pycache_/
+*.log
+
+# Ignore everything in OneDrive temporary folders
+*.stackdump
+*~*
+*.swp
+
+# Ignore node_modules if you're using Node.js
+node_modules/
+
+# Ignore any .exe files (like the one that caused problems earlier)
+*.exe
