@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for Green Harvest Network membership. Join our community of farmers and agricultural professionals today.">
+  <meta name="keywords" content="register, signup, farmers, agriculture, membership, Green Harvest Network">
+  <meta name="author" content="Green Harvest Network Team">
+
+  <!--Title -->
+  <title>Green Harvest Network | Register</title>
+
+  <!--Styles -->
+  <link rel="stylesheet" href="style/register.css">
+</head>
+
+<body>
+  <!-- ▸ HEADER -->
+  <header class="site-header">
+    <div class="container flex-between">
+      <a href="index.html" class="brand">
+        <img src="images/green-logo.jpg" alt="Green Harvest Network logo" class="logo" width="120">
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav">
+        
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="register.html" class="active">Register</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ▸ MAIN -->
+  <main>
+    <section class="registration-form container">
+      <h1>Join Green Harvest Network</h1>
+      <form id="membershipForm" class="form">
+        <div class="form-group">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+          <label for="farmName">Farm/Organization Name</label>
+          <input type="text" id="farmName" name="farmName">
+        </div>
+
+        <div class="form-group">
+          <label for="membershipType">Membership Type *</label>
+          <select id="membershipType" name="membershipType" required>
+            <option value="">Select a plan...</option>
+            <option value="basic">Basic - $50/year</option>
+            <option value="premium">Premium - $100/year</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend>Areas of Interest</legend>
+            <div class="checkbox-group">
+              <label for="organic">
+                <input type="checkbox" id="organic" name="interests" value="organic"> 
+                Organic Farming
+              </label>
+              <label for="livestock">
+                <input type="checkbox" id="livestock" name="interests" value="livestock"> 
+                Livestock
+              </label>
+              <label for="crops">
+                <input type="checkbox" id="crops" name="interests" value="crops"> 
+                Crop Production
+              </label>
+              <label for="sustainability">
+                <input type="checkbox" id="sustainability" name="interests" value="sustainability"> 
+                Sustainability
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="experience">Farming Experience</label>
+          <select id="experience" name="experience">
+            <option value="">Select...</option>
+            <option value="beginner">Beginner (0-2 years)</option>
+            <option value="intermediate">Intermediate (3-10 years)</option>
+            <option value="experienced">Experienced (10+ years)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn primary-btn">Register Now</button>
+      </form>
+
+      <div id="successMessage" class="success-message" style="display: none;">
+        <h2>Registration Successful!</h2>
+        <p id="welcomeText"></p>
+      </div>
+    </section>
+
+    <section class="registration-stats container">
+      <h2>Registration Statistics</h2>
+      <div id="statsContainer">
+        <!-- Stats will be populated by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ▸ FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentyear"></span> Green Harvest Network. All rights reserved.</p>
+      <p id="lastmodified"></p>
+    </div>
+  </footer>
+
+  <script src="script/register.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choose your Green Harvest Network membership plan. Basic or Premium options available for farmers and agricultural enthusiasts.">
+  <meta name="keywords" content="membership, farmers, agriculture, plans, Green Harvest Network">
+  <meta name="author" content="Green Harvest Network Team">
+
+  <!--Title -->
+  <title>Green Harvest Network | Membership Plans</title>
+
+  <!--Styles -->
+  <link rel="stylesheet" href="style/membership.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container flex-between">
+      <a href="index.html" class="brand">
+        <img src="images/green-logo.jpg" alt="Green Harvest Network logo" class="logo" width="120">
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav">
+        
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="membership.html" class="active">Membership</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="hero-small">
+      <div class="container">
+        <h1>Choose Your Membership Plan</h1>
+        <p>Join thousands of farmers growing together</p>
+      </div>
+    </section>
+
+    <section class="membership-plans container">
+      <h2>Membership Options</h2>
+      <div class="plans-grid" id="plansContainer">
+        <!-- Plans will be populated by JavaScript -->
+      </div>
+    </section>
+
+    <section class="members-showcase container">
+      <h2>Our Community</h2>
+      <div id="membersList">
+        <!-- Members will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ▸ FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentyear"></span> Green Harvest Network. All rights reserved.</p>
+      <p id="lastmodified"></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script/membership.js" defer></script>
+</body>
+</html>

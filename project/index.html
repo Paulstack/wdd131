@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Green Harvest Network an online community that empowers farmers through shared knowledge, resources, and collaboration.">
+    <meta name="keywords" content="farmers, agriculture, community, resources, Green Harvest Network">
+    <meta name="author" content="Green Harvest Network Team">
+
+  <!--Title -->
+  <title>Green Harvest Network | Empowering Farmers</title>
+
+  <!--Styles -->
+  <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+  <!-- ▸ HEADER  -->
+  <header class="site-header">
+    <div class="container flex-between">
+      <!-- Logo -->
+      <a href="index.html" class="brand">
+        <img src="images/green-logo.jpg" alt="Green Harvest Network logo" class="logo" width="120">
+      </a>
+
+      <!-- Mobile Nav Toggle (button handled in script.js) -->
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav">
+        
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav id="primary-nav" aria-label="Primary" class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ▸ MAIN -->
+  <main>
+    <!-- Hero / Welcome (lazy-loaded image below the fold) -->
+    <section class="hero">
+      <img
+        src="images/farmers-working-together.jpg"
+        loading="lazy"
+        alt="Farmers working together in a lush green field"
+        class="hero-img">
+      <div class="hero-content">
+        <h1>Welcome to Green Harvest Network</h1>
+        <p>
+          A community-driven platform dedicated to empowering farmers and
+          agricultural enthusiasts through collaboration, shared knowledge,
+          and access to vital resources.
+        </p>
+        <a href="membership.html" class="btn primary-btn">Discover Membership</a>
+      </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="mission container">
+      <h2>Our Mission</h2>
+      <p>
+        Green Harvest Network strives to foster sustainable agriculture by
+        connecting farmers worldwide, facilitating continuous learning, and
+        creating earning opportunities through cooperative programs.
+      </p>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Grow Together?</h2>
+        <p>Join thousands of farmers already benefiting from our network.</p>
+        <a href="register.html" class="btn secondary-btn">Become a Member</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentyear"></span> Green Harvest Network. All rights reserved.</p>
+      <p id="lastmodified"></p>
+    </div>
+  </footer>
+
+  <!--  JavaScript -->
+  <script src="script/index.js" defer></script>
+</body>
+</html>
